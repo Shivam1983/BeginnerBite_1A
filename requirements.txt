@@ -1,0 +1,11 @@
+PyMuPDF
+sentence-transformers
+rank_bm25
+click
+
+scikit-learn
+pandas
+joblib
+
+pytest
+langid>=1.1.6

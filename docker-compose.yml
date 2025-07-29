@@ -1,0 +1,13 @@
+version: "3"
+services:
+  pdf-analyzer:
+    build: .
+    volumes:
+      # Mount input_pdfs directory to allow easy file access
+      - ./input_pdfs:/app/input_pdfs
+      # Mount output directory to access results
+      - ./output:/app/output
+      # Mount models directory to persist trained models
+      - ./models:/app/models
+    # Default command runs analysis, can be overridden
+    command: python analyze_pdf.py --mode analyze input_pdfs output

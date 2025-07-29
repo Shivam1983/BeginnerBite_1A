@@ -1,0 +1,33 @@
+# File patterns to ignore when building Docker image
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+
+# Virtualenv
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+DOCKER.md
+README.md
+*.md
+
+# Temporary files
+__tmp_*
+
+# Scripts not needed in container
+run_docker.sh
+run_docker.bat
+
+# Docker files
+.dockerignore

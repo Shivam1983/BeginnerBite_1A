@@ -1,0 +1,14 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtualenv
+venv/
+
+# Data & outputs
+__tmp_round1a__/
+
+# IDE/editor
+.vscode/
+.idea/
