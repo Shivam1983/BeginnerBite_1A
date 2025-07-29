@@ -177,10 +177,7 @@ docker build --platform linux/amd64 -t pdf-analyzer .
 ### Run Inference (No Internet)
 
 ```bash
-docker run --rm \
-  -v "${PWD}/data/input_pdfs:/app/input" \
-  -v "${PWD}/output:/app/output" \
-  --network none pdf-analyzer
+docker run --rm -v "${PWD}/data/input_pdfs:/app/input" -v "${PWD}/output:/app/output" --network none pdf-analyzer
 ```
 
 ### Output:
